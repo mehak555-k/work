@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #000000, #00008b); /* Black to Dark Blue Gradient */
+    color: white;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 20px;
+       
+}
+/* Header Section */
+
+header {
+    background-color: #16213e;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.highlight {
+    color: yellow;
+    font-weight: bold;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.info-text {
+    line-height: 1.8; /* Adds space between lines in the paragraph */
+}
+
+.price {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #ff3333;
+    margin-right: 10px;
+}
+
+.free-price {
+    color: yellow;
+    font-weight: bold;
+}
+.vip-section {
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Adds spacing between elements */
+  }
+  
+  .vip-banner {
+    background: linear-gradient(90deg, #FFD700, #66CCFF); /* Gradient for the banner */
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 25px;
+    display: inline-block;
+  }
+  
+  
+/* Video Container and Image */
+.video-container {
+    display: inline-block;
+    background-color: #f4f4f4;
+    padding: 10px;  /* Reduce padding to make the container smaller */
+    border-radius: 10px;
+    margin-bottom: 30px;
+    width: 100%;  /* Ensure the container takes the full width */
+    max-width: 400px;  /* Reduced the width to make the container smaller */
+    overflow: hidden;  /* Ensure image stays within container bounds */
+}
+
+.video-container img.image {
+    width: 100%;    /* Make the image fill the container's width */
+    height: auto;   /* Keep the aspect ratio intact */
+    object-fit: cover; /* Optionally crop the image to cover the container */
+}
+
+
+  
+  .countdown-timer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+  }
+  
+  .timer-box {
+    text-align: center;
+  }
+  
+  .timer-box .time {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FFD700;
+  }
+  
+  .timer-box .label {
+    font-size: 0.9rem;
+    color: white;
+  }
+  
+  .hurry-message {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #FFD700;
+    margin-top: 10px;
+  }
+
+  .wrapper {
+    max-width: 700px; /* Increase the width of the div */
+    margin: 50px auto;
+    text-align: center;
+    background: linear-gradient(135deg, #100f0f, #040435);
+    padding: 30px; /* Add more padding for a larger feel */
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.logo-section img {
+    width: 350px; /* Increase image size */
+    height: auto;
+    margin-bottom: 30px;
+    border-radius: 20px; /* Apply rounded corners */
+}
+
+
+.info-section .title {
+    color: #ffa500;
+    font-size: 2.5rem; /* Increase title size */
+}
+
+.info-section .subtitle {
+    font-size: 1.2rem; /* Slightly larger subtitle */
+    margin: 15px 0 25px;
+    color: #d3d3d3;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin: 0 auto;
+    width: 80%; /* Center and constrain list width */
+}
+
+.feature-item {
+    font-size: 1.2rem; /* Make text slightly larger */
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+.checkmark {
+    color: #32cd32;
+    margin-right: 15px;
+    font-size: 1.5rem; /* Adjust checkmark size */
+}
+
+.feature-item {
+    color: #fff;
+}
+ 
+/* Styling for the new info-wrapper */
+.info-wrapper {
+    max-width: 700px; /* Similar to wrapper size */
+    margin: 50px auto;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    color: #fff; /* Text color */
+    background: linear-gradient(135deg, #100f0f, #040435);
+
+}
+.section-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #ffa500; /* Highlighted orange title */
+}
+
+.info-section .title {
+    color: #ffa500;
+    font-size: 2.5rem;
+}
+
+.info-section .subtitle {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #d3d3d3;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin: 20px auto;
+    width: 80%; /* Keep the list centered */
+}
+
+.feature-item {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+.checkmark {
+    color: #32cd32;
+    margin-right: 15px;
+    font-size: 1.5rem;
+}
+#masterclass-container {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+  }
+  
+  .container-b {
+    text-align: center;
+  }
+  
+  .header-b {
+    font-size: 2rem;
+    color: #ff9c00;
+  }
+  
+  .subheader-b {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+  
+  .countdown-b {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+  }
+  
+  .time-b {
+    text-align: center;
+  }
+  
+  .time-b span {
+    display: block;
+    font-size: 2.5rem;
+    color: #ffcc00;
+  }
+
+  
+ 
+  .text-b {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  #info-wrapper h2 {
+    color: yellow;
+    font-size: 1.5rem;
+  }
+  
+  #info-section {
+   
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  #features-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #feature-item {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .checkmark {
+    color: green;
+    margin-right: 10px;
+  }
+  .join-now {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .join-button {
+    background: linear-gradient(to right, #00c6ff, #0072ff); /* Linear gradient from light blue to dark blue */
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+    transition: background-color 0.3s, transform 0.3s;
+    display: inline-block;
+    position: relative;
+    top: -25px; /* Slightly shift the button upwards */
+  }
+  
+  .join-button:hover {
+    background: linear-gradient(to right, #0072ff, #00c6ff); /* Reverse gradient on hover */
+    transform: translateY(-5px); /* Lift the button a bit more on hover */
+  }
+  
+  .join-button:active {
+    background: linear-gradient(to right, #004085, #0062cc); /* Darker gradient on active */
+    transform: translateY(0); /* Reset the hover effect when clicked */
+  }
+  /* Media Queries for Responsive Design */
+@media only screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .container h1 {
+        font-size: 2rem;
+    }
+
+    .info-text {
+        font-size: 1rem;
+    }
+
+    .vip-banner {
+        font-size: 1.2rem;
+    }
+
+    .countdown-timer {
+        flex-direction: column;
+    }
+
+    .timer-box {
+        margin: 10px 0;
+    }
+
+    .container-b h1,
+    .container-b h2 {
+        font-size: 1.5rem;
+    }
+
+    .countdown-b {
+        flex-direction: column;
+    }
+
+    .time-b {
+        margin: 10px 0;
+    }
+
+    #features-list {
+        font-size: 1rem;
+    }
+
+    .join-button {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .container h1 {
+        font-size: 1.8rem;
+    }
+
+    .info-text {
+        font-size: 0.9rem;
+    }
+
+    .vip-banner {
+        font-size: 1.1rem;
+    }
+
+    .countdown-timer {
+        flex-direction: column;
+    }
+
+    .container-b h1,
+    .container-b h2 {
+        font-size: 1.2rem;
+    }
+
+    .join-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    #features-list {
+        font-size: 0.9rem;
+    }
+}
+  

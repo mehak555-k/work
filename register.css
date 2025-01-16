@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #b3e6b3, #b3d9ff); /* Linear gradient from light green to light blue */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .registration-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  form input::placeholder {
+    color: #888;
+  }
+  
+  form .register-button {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    text-align: center;
+    text-decoration: none;
+    cursor: not-allowed; /* Disable the button by default */
+    pointer-events: none; /* Disable clicking on the button */
+    transition: background-color 0.3s ease;
+  }
+  
+  form .register-button:hover {
+    background-color: #0056b3;
+  }
+  
+  form .register-button:active {
+    background-color: #004085;
+  }
+/* Media Queries for responsiveness */
+
+/* Tablet View */
+@media only screen and (max-width: 768px) {
+    .registration-container {
+      padding: 20px;
+      max-width: 500px;
+    }
+  
+    h1 {
+      font-size: 1.6rem;
+    }
+  
+    input {
+      font-size: 0.9rem;
+      padding: 10px;
+    }
+  
+    .register-button {
+      font-size: 1.1rem;
+      padding: 12px;
+    }
+  }
+  
+  /* Mobile View */
+  @media only screen and (max-width: 480px) {
+    .registration-container {
+      padding: 15px;
+      max-width: 90%;
+    }
+  
+    h1 {
+      font-size: 1.4rem;
+    }
+  
+    input {
+      font-size: 0.85rem;
+      padding: 8px;
+    }
+  
+    .register-button {
+      font-size: 1rem;
+      padding: 10px;
+    }
+  }  
